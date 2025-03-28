@@ -1,0 +1,26 @@
+
+@font-face {
+    font-family: 'Boldonse';
+    src: url('../Boldonse-Regular.ttf') format('truetype');
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+:root {
+    --background: white;
+    --primary-text: black;
+    --secondry-text: white;
+
+    --primary-accent: salmon;
+    --primary-accent-background: rgb(255, 220, 216);
+
+    --secondry-accent: cornflowerblue;
+    --secondry-accent-background: rgb(204, 222, 255);
+
+    --tertiary-accent: cadetblue;
+
+    --placeholder-gradient: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
+}
