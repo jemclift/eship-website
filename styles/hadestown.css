@@ -105,7 +105,6 @@
 
 .sidebar-card {
     box-sizing: border-box;
-    /* border: 1px solid black; */
     margin-top: .5rem;
     display: flex;
     height: 9rem;
@@ -262,11 +261,9 @@
     font-family: Boldonse;
     justify-content: space-between;
     margin-bottom: 1rem;
-
-    /* overflow-y: scroll; */
-    /* overflow-x: scroll; */
-    /* overflow: hidden; */
-    /* height: 2rem; */
+    overflow: hidden;
+    overflow-x: scroll;
+    scrollbar-width: none;
     white-space: nowrap; 
     width: calc(75vw - 23rem);
 }
@@ -331,15 +328,13 @@
 }
 
 #show-details #buy-tickets {
-    background-color: white;
+    background-color: var(--secondry-text);
     margin-right: .5rem;
     flex: 0 0 calc(50% - .5rem);
-    /* color: white;
-    background-color: black; */
     cursor: pointer;
     user-select: none;
     box-sizing: border-box;
-    border: .25rem solid black;
+    border: .25rem solid var(--primary-text);
 }
 
 #show-details #buy-tickets:has(> .title:active) {
@@ -351,9 +346,9 @@
 }
 
 #show-details #buy-tickets .title {
-    background-color: black;
+    background-color: var(--primary-text);
     padding: .75rem;
-    color: white;
+    color: var(--secondry-text);
     font-family: Boldonse;
 }
 
@@ -391,7 +386,7 @@
 
 #show-details #notify-discounts #max-price input {
     width: 3rem;
-    background-color: white;
+    background-color: var(--background);
     border: .1rem solid var(--primary-accent);
     height: 1.5rem;
     box-sizing: border-box;
@@ -402,7 +397,7 @@
 #show-details #notify-discounts #max-price select {
     width: 5rem;
     text-overflow: ellipsis;
-    background-color: white;
+    background-color: var(--background);
     border: .1rem solid var(--primary-accent);
     color: var(--primary-accent);
     box-sizing: border-box;
@@ -483,4 +478,71 @@
         var(--secondry-accent-background) .25rem,
         var(--secondry-accent-background) .5rem
     );
+}
+
+/* cast, crew and creatives */
+
+#cast-crew-creatives .top-row {
+    display: flex;
+    font-family: Boldonse;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+#cast-crew-creatives #filter-section {
+    display: flex;
+}
+
+#cast-crew-creatives #filter-section .title {
+    color: var(--primary-accent)
+}
+
+#cast-crew-creatives #filter-section label {
+    background-color: var(--primary-accent-background);
+    margin-left: .25rem;
+    padding: 0 .5rem 0 .5rem;
+    color: var(--primary-accent);
+    box-sizing: border-box;
+    border: .25rem solid var(--background);
+}
+
+#cast-crew-creatives #filter-section input {
+    /* padding-bottom: .5rem; */
+    display: none;
+}
+
+#cast-crew-creatives #filter-section input:checked+label {
+    border-color: var(--primary-accent);
+}
+
+#cast-crew-creatives .scroll-card {
+    margin-left: 1rem;
+    text-decoration: none;
+}
+
+#cast-crew-creatives .scroll-card:hover .performer {
+    text-decoration: underline;
+}
+
+#cast-crew-creatives .scroll-card:first-child {
+    margin-left: 0;
+}
+
+#cast-crew-creatives .artwork {
+    width: 10rem;
+    height: 10rem;
+    background: var(--placeholder-gradient);
+    border-radius: .2rem;
+    margin-bottom: .5rem;
+}
+
+#cast-crew-creatives .details {
+    font-family: Boldonse;
+    font-size: 0.7rem;
+    color: var(--primary-text)
+}
+
+#cast-crew-creatives .character {
+    font-style: italic;
+    color: var(--primary-accent);
 }
