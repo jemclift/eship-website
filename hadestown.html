@@ -2,17 +2,17 @@
 <html>
 
 <head>
-    <title>SHOWSTER</title>
+    <title>Hadestown - SHOWSTER</title>
 
     <link rel="stylesheet" href="styles/global.css">
     <link rel="stylesheet" href="styles/titlebar.css">
-    <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="styles/hadestown.css">
 </head>
 
 <body>
 
 <!-- title bar -->
- <div id="titlebar">
+<div id="titlebar">
 
     <a href="/" id="logo">
         <div class="text">SHOWSTER</div>
@@ -42,184 +42,83 @@
         <div class="spacer"></div>
         <div class="image">👤</div>
     </a>
- </div>
+</div>
 
- <!-- main area -->
- <div id="main-wrapper">
+<div id="main-content">
+    <div id="left-area">
 
-    <!-- left area -->
-    <div id="main-content">
-        <div id="sponsored-section" class="main-section">
-            <div class="section-title">
-                <left>Today's Featured</left>
-                <right><span>[i] sponsored</span></right>
+        <!-- show details -->
+        <div id="show-details" class="main-section">
+            <div class="top">
+                <div class="artwork"></div>
+                <div class="details">
+
+                    <div id="top-row" class="show-details-row">
+                        <div class="left">
+                            <div class="title">Hadestown</div>
+                            <div class="score"><span>⭐️</span>10.0</div>
+                            <a href="/" class="location"><span>📍</span>LONDON</a>
+                        </div>
+                        <div class="right">
+                            <a href="/" id="add-to-list"><span>❤️</span>add to list</a>
+                        </div>
+                    </div>
+
+                    <div id="description" class="show-details-row">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+
+                    <div id="tickets-row" class="show-details-row">
+                        <div id="buy-tickets">
+                            <div class="title"><span>🎟️</span>BUY TICKETS</div>
+                            <div id="suggested-invite">
+                                <input type="checkbox" id="html" name="fav_language" value="HTML">
+                                <label for="html">On Matt's list - invite him?</label>
+                            </div>
+                        </div>
+
+                        <div id="notify-discounts">
+                            <div class="title">
+                                <input type="checkbox" id="notify" name="fav_language" value="HTML">
+                                <label for="notify">Notify about on the day discount</label>
+                            </div>
+                            <div id="max-price">Max price: <input type="text" placeholder="£">, Seat location: <select name="cars" id="cars">
+                                <option value="volvo">Upper Circle</option>
+                                <option value="saab">Saab</option>
+                                <option value="mercedes">Mercedes</option>
+                                <option value="audi">Audi</option>
+                              </select></div>
+                        </div>
+                    </div>
+
+                    <div id="ratings-area">
+                        <div class="ratings-card">
+                            <div class="title">friends rating</div>
+                            <div class="rating"><span>⭐️</span>10.0</div>
+                        </div>
+                        <div class="ratings-card">
+                            <div class="title">critic rating</div>
+                            <div class="rating"><span>⭐️</span>9.8</div>
+                        </div>
+                        <div class="ratings-card">
+                            <div class="title">public rating</div>
+                            <div class="rating"><span>⭐️</span>9.5</div>
+                        </div>
+                    </div>
+
+                    <div id="advert">ADVERT</div>
+
+                    <div id="ratings-and-advert" class="show-details-row"></div>
+                </div>
             </div>
-            <div class="scrolling-cards">
-                <a href="/hamilton" id="hamilton" class="scroll-card">
-                    <div class="card-wrapper">
-                        <div class="artwork"></div>
-                        <div class="info-area">
-                            <div class="title-area">
-                                <div class="title">Hamilton</div>
-                                <div class="score"><span>⭐️</span>9.1</div>
-                            </div>
-                            <div class="description">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                            </div>
-                        </div>
-                        <div id="fade-out"></div>
-                    </div>
-                </a>
-                <a href="hadestown.html" id="hadestown" class="scroll-card">
-                    <div class="card-wrapper">
-                        <div class="artwork"></div>
-                        <div class="info-area">
-                            <div class="title-area">
-                                <div class="title">Hadestown</div>
-                                <div class="score"><span>⭐️</span>10.0</div>
-                            </div>
-                            <div class="description">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                            </div>
-                            <div id="fade-out"></div>
-                        </div>
-                    </div>
-                </a>
-                <a href="/wicked" id="wicked" class="scroll-card">
-                    <div class="card-wrapper">
-                        <div class="artwork"></div>
-                        <div class="info-area">
-                            <div class="title-area">
-                                <div class="title">Wicked</div>
-                                <div class="score"><span>⭐️</span>9.5</div>
-                            </div>
-                            <div class="description">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                            </div>
-                            <div id="fade-out"></div>
-                        </div>
-                    </div>
-                </a>
-            </div>
-        </div>
-
-        <div id="west-end-section" class="main-section small-shows">
-            <div class="section-title">West End Shows</div>
-            <div class="scrolling-cards">
-
-                <a href="/meangirls" id="meansgirls" class="scroll-card">
-                    <div class="artwork">
-                        <div class="score"><span>⭐️</span>8.7</div>
-                    </div>
-                    <div class="info-area">
-                        <div class="title">Mean Girls</div>
-                    </div>
-                </a>
-
-                <a href="/backtothefuture" id="backtothefuture" class="scroll-card">
-                    <div class="artwork">
-                        <div class="score"><span>⭐️</span>6.7</div>
-                    </div>
-                    <div class="info-area">
-                        <div class="title">Back to the Future</div>
-                    </div>
-                </a>
-
-                <a href="/meangirls" id="meansgirls" class="scroll-card">
-                    <div class="artwork">
-                        <div class="score"><span>⭐️</span>6.1</div>
-                    </div>
-                    <div class="info-area">
-                        <div class="title">Harry Potter and the Cursed Child</div>                    
-                    </div>
-                </a>
-
-                <a href="/meangirls" id="meansgirls" class="scroll-card">
-                    <div class="artwork">
-                        <div class="score"><span>⭐️</span>8.7</div>
-                    </div>
-                    <div class="info-area">
-                        <div class="title">Mean Girls</div>
-                    </div>
-                </a>
-
-                <a href="/backtothefuture" id="backtothefuture" class="scroll-card">
-                    <div class="artwork">
-                        <div class="score"><span>⭐️</span>6.7</div>
-                    </div>
-                    <div class="info-area">
-                        <div class="title">Back to the Future</div>
-                    </div>
-                </a>
-
-                <a href="/meangirls" id="meansgirls" class="scroll-card">
-                    <div class="artwork">
-                        <div class="score"><span>⭐️</span>6.1</div>
-                    </div>
-                    <div class="info-area">
-                        <div class="title">Harry Potter and the Cursed Child</div>                    
-                    </div>
-                </a>
-
-                <a href="/meangirls" id="meansgirls" class="scroll-card">
-                    <div class="artwork">
-                        <div class="score"><span>⭐️</span>8.7</div>
-                    </div>
-                    <div class="info-area">
-                        <div class="title">Mean Girls</div>
-                    </div>
-                </a>
-
-                <a href="/backtothefuture" id="backtothefuture" class="scroll-card">
-                    <div class="artwork">
-                        <div class="score"><span>⭐️</span>6.7</div>
-                    </div>
-                    <div class="info-area">
-                        <div class="title">Back to the Future</div>
-                    </div>
-                </a>
-
-                <a href="/meangirls" id="meansgirls" class="scroll-card">
-                    <div class="artwork">
-                        <div class="score"><span>⭐️</span>6.1</div>
-                    </div>
-                    <div class="info-area">
-                        <div class="title">Harry Potter and the Cursed Child</div>                    
-                    </div>
-                </a>
-
-                <a href="/meangirls" id="meansgirls" class="scroll-card">
-                    <div class="artwork">
-                        <div class="score"><span>⭐️</span>8.7</div>
-                    </div>
-                    <div class="info-area">
-                        <div class="title">Mean Girls</div>
-                    </div>
-                </a>
-
-                <a href="/backtothefuture" id="backtothefuture" class="scroll-card">
-                    <div class="artwork">
-                        <div class="score"><span>⭐️</span>6.7</div>
-                    </div>
-                    <div class="info-area">
-                        <div class="title">Back to the Future</div>
-                    </div>
-                </a>
-
-                <a href="/meangirls" id="meansgirls" class="scroll-card">
-                    <div class="artwork">
-                        <div class="score"><span>⭐️</span>6.1</div>
-                    </div>
-                    <div class="info-area">
-                        <div class="title">Harry Potter and the Cursed Child</div>                    
-                    </div>
-                </a>
-
+            <div class="bottom">
+                <a href="/" id="vinyl" class="buy-link"><span>💿</span><div>Buy Broadway Cast Recording Vinyl</div></a>
+                <a href="/" id="vinyl" class="buy-link"><span>🎬</span><div>Buy Proshot Recording [affiliate]</div></a>
+                <a href="/" id="vinyl" class="buy-link"><span>👕</span><div>Buy Merch & Clothing</div></a>
             </div>
         </div>
 
-        <div id="local-section" class="main-section small-shows">
-            <div class="section-title">Local to You</div>
+        <!-- recomendations -->
+        <div id="peoplealsolike" class="main-section small-shows">
+            <div class="section-title">People Also Like</div>
 
             <div class="scrolling-cards">
 
@@ -335,7 +234,7 @@
 
         </div>
 
-        <div id="local-section" class="main-section small-shows">
+        <div id="youmightlike" class="main-section small-shows">
             <div class="section-title">You Might Like...</div>
 
             <div class="scrolling-cards">
@@ -540,7 +439,6 @@
 
     </div>
 </div>
-
 
 </body>
 

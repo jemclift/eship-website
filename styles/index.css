@@ -243,9 +243,7 @@
 
 .sidebar-card .description {
     color: var(--secondry-text);
-    /* position: relative; */
 }
-
 
 #sidebar #friend-ratings {
     margin-bottom: 1rem;
@@ -253,12 +251,14 @@
 }
 
 #rating-cards {
-    height: calc(100vh - 20rem);
+    height: calc(100vh - 19.75rem);
     overflow-y: scroll;
 }
 
 #news {
     margin-top: .5rem;
+    background-color: var(--background);
+    box-shadow: 0 0 0 .25rem var(--background), 0 0 0 .5rem var(--primary-text);
 }
 
 #news .details {
@@ -268,10 +268,12 @@
 #news .title {
     font-size: .7rem;
     margin-bottom: .5rem;
+    color: var(--primary-text);
 }
 
 #news .description {
     font-size: 1rem;
+    color: var(--primary-text);
 }
 
 /* other */
@@ -279,4 +281,5 @@
 #copyright {
     font-family: Boldonse;
     font-size: .7rem;
+    margin-bottom: 0rem;
 }
