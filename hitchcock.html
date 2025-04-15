@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Hadestown - SHOWSTER</title>
+
+    <link rel="stylesheet" href="styles/global.css">
+    <link rel="stylesheet" href="styles/titlebar.css">
+    <link rel="stylesheet" href="styles/hadestown.css">
+</head>
+
+<body>
+
+<!-- title bar -->
+<div id="titlebar">
+
+    <a href="/" id="logo">
+        <div class="text">SHOWSTER</div>
+        <div class="spacer"></div>
+        <div class="image">🎟️</div>
+    </a>
+
+    <div id="searchbar">
+        <input type="text" placeholder="search..."></input>
+        <button><span>👀</span></button>
+    </div>
+
+    <a href="/premium" id="premium">
+        <div class="text">premium</div>
+        <div class="spacer"></div>
+        <div class="image">👑</div>
+    </a>
+
+    <a href="/menu" id="menu">
+        <div class="text">menu</div>
+        <div class="spacer"></div>
+        <div class="image">🍔</div>
+    </a>
+
+    <a href="/profile" id="profile">
+        <div class="text">profile</div>
+        <div class="spacer"></div>
+        <div class="image">👤</div>
+    </a>
+</div>
+
+<div id="main-content">
+    <div id="left-area">
+
+        <!-- show details -->
+        <div id="show-details" class="main-section">
+            <div class="top">
+                <div class="artwork">
+                    <img src="assets/images/hitchcock_presents.png">
+                </div>
+                <div class="details">
+
+                    <div id="top-row" class="show-details-row">
+                        <div class="left">
+                            <div class="title">Alfred Hitchcock Presents: The Musical</div>
+                            <div class="score"><span>⭐️</span>9.1</div>
+                            <a href="/" class="location"><span>📍</span>BATH</a>
+                        </div>
+                        <div class="right">
+                            <a href="/" id="add-to-list"><span>❤️</span>add to list</a>
+                        </div>
+                    </div>
+
+                    <div id="description" class="show-details-row">
+                        A stellar cast tell extraordinary interwoven tales of betrayal, blackmail and homicide from the Master of Suspense, Alfred Hitchcock, the creative genius behind iconic movies Psycho, Vertigo, North by Northwest, Rear Window, The Birds and many more.
+                    </div>
+
+                    <div id="tickets-row" class="show-details-row">
+                        
+                        <div id="write-review">
+                            <div class="title"><span>📝</span>WRITE REVIEW</div>
+                            <div class="review-stars">
+                                <span>Rate this: ❓/⭐️ ⭐️ ⭐️ ⭐️ ⭐️</span>
+                            </div>
+                    
+                        </div>
+                        <div id="buy-tickets">
+                            <div class="title"><span>🎟️</span>BUY TICKETS</div>
+                            <div id="suggested-invite">
+                                <input type="checkbox" id="html" name="fav_language" value="HTML">
+                                <label for="html">On John's list - invite him?</label>
+                            </div>
+                        </div>
+
+                        <div id="notify-discounts">
+                            <div class="title">
+                                <input type="checkbox" id="notify" name="fav_language" value="HTML">
+                                <label for="notify">Notify about on the day discount</label>
+                            </div>
+                            <div id="max-price">Max price: <input type="text" placeholder="£">, Seat location: <select name="cars" id="cars">
+                                <option value="volvo">Upper Circle</option>
+                                <option value="saab">Lower Circle</option>
+                                <option value="mercedes">Stalls</option>
+                              </select></div>
+                        </div>
+                    </div>
+
+                    <div id="ratings-area">
+                        <div class="ratings-card">
+                            <div class="title">friends rating</div>
+                            <div class="rating"><span>⭐️</span>7.2</div>
+                        </div>
+                        <div class="ratings-card">
+                            <div class="title">critic rating</div>
+                            <div class="rating"><span>⭐️</span>9.8</div>
+                        </div>
+                        <div class="ratings-card">
+                            <div class="title">public rating</div>
+                            <div class="rating"><span>⭐️</span>9.1</div>
+                        </div>
+                    </div>
+
+                    <div id="advert">
+                        <a href="/encore.html">
+                        <img src="assets/images/Encore-advert.png"/></a>
+                    </div>
+
+                    <div id="ratings-and-advert" class="show-details-row"></div>
+                </div>
+            </div>
+            <div class="bottom">
+                <a href="/" id="vinyl" class="buy-link"><span>💿</span><div>Buy Broadway Cast Recording Vinyl</div></a>
+                <a href="/" id="vinyl" class="buy-link"><span>🎬</span><div>Buy Proshot Recording [affiliate]</div></a>
+                <a href="/" id="vinyl" class="buy-link"><span>👕</span><div>Buy Merch & Clothing</div></a>
+            </div>
+        </div>
+
+        <div id="hitchcock-reviews" class="main-section review-section">
+            <div class="section-title">Audience Reviews</div>
+        
+            <div class="scrolling-reviews">
+        
+                <div class="review-card">
+                    <div class="review-title">“Suspense, style, and songs — a killer combination.”</div>
+                    <div class="review-score"><span>⭐️</span>9.6</div>
+                    <div class="reviewer-name">– Isabelle F.</div>
+                    <div class="review-text">
+                        Who knew Hitchcock could be turned into a musical — and such a *good* one at that? Every number oozed suspense and theatrical flair, with cheeky nods to classic films like *Psycho* and *Rear Window*. The cast was outstanding, and the direction was tight, clever, and so fun to watch.
+                    </div>
+                </div>
+        
+                <div class="review-card">
+                    <div class="review-title">“More thrilling than half the West End.”</div>
+                    <div class="review-score"><span>⭐️</span>9.8</div>
+                    <div class="reviewer-name">– Oliver K.</div>
+                    <div class="review-text">
+                        Honestly? This production had no right to be this good. The writing was sharp, the songs were memorable, and the suspense was brilliantly balanced with tongue-in-cheek humour. The audience was howling one minute and gasping the next. If you ever get the chance — go see it.
+                    </div>
+                </div>
+        
+                <div class="review-card">
+                    <div class="review-title">“Perfectly camp, perfectly eerie, perfectly Hitchcock.”</div>
+                    <div class="review-score"><span>⭐️</span>9.5</div>
+                    <div class="reviewer-name">– Tamzin L.</div>
+                    <div class="review-text">
+                        It’s like Hitchcock directed *Chicago* with a dash of Sondheim. The tone walked that tightrope between thrilling and theatrical so well. The music was cleverly written, with eerie motifs that stuck in your head. Huge kudos to the lighting and sound team — total chills during some scenes!
+                    </div>
+                </div>
+        
+                <div class="review-card">
+                    <div class="review-title">“A masterclass in mood and melody.”</div>
+                    <div class="review-score"><span>⭐️</span>9.7</div>
+                    <div class="reviewer-name">– Marcus D.</div>
+                    <div class="review-text">
+                        One of the most inventive productions I’ve seen in years. From the slashing violins in the overture to the slow build of the final act, the tension was *musically* crafted, which was such a clever twist. Hitchcock would’ve been proud — and maybe a little jealous.
+                    </div>
+                </div>
+        
+                <div class="review-card">
+                    <div class="review-title">“A thrilling tribute that never takes itself too seriously.”</div>
+                    <div class="review-score"><span>⭐️</span>9.3</div>
+                    <div class="reviewer-name">– Ellie M.</div>
+                    <div class="review-text">
+                        The whole thing was a delight — part love letter, part parody, all performed with absolute commitment. The lead actor as Hitchcock’s 'shadow' narrator was genius, and the transitions between scenes were so stylish. You could tell the creative team had fun with this, and so did we.
+                    </div>
+                </div>
+        
+                <div class="review-card">
+                    <div class="review-title">“Unmissable. An absolute triumph of concept and execution.”</div>
+                    <div class="review-score"><span>⭐️</span>10.0</div>
+                    <div class="reviewer-name">– Alex N.</div>
+                    <div class="review-text">
+                        I went in curious — I left completely obsessed. This is one of those rare productions where every department was firing at 110%. Brilliantly acted, flawlessly staged, and musically rich. The standing ovation at the end was instant and well-earned. I’d see it again in a heartbeat.
+                    </div>
+                </div>
+        
+            </div>
+        </div>
+        
+
+        <!-- cast crew creatives -->
+        <div class="main-section" id="cast-crew-creatives">
+            <div class="top-row">
+                <div class="title">Cast, Crew & Creatives</div>
+                
+                <div id="filter-section">
+
+                    <div class="title">filter</div>
+                    
+                    <div class="radio">
+                        <input type="radio" name="filter" id="all" value="all" checked="checked">
+                        <label for="all">all</label>
+                    </div>
+
+                    <div class="radio">
+                        <input type="radio" name="filter" id="cast" value="cast">
+                        <label for="cast">cast</label>
+                    </div>
+
+                    <div class="radio">
+                        <input type="radio" name="filter" id="crew" value="crew">
+                        <label for="crew">crew</label>
+                    </div>
+
+                    <div class="radio">
+                        <input type="radio" name="filter" id="creatives" value="creatives">
+                        <label for="creatives">creatives</label>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="scrolling-cards">
+
+                <a href="/" class="scroll-card">
+                    <div class="artwork">
+                        <img src="assets/images/profile_pic.jpg"/>
+                    </div>
+                    <div class="details">
+                        <div class="performer">Mike Bolton</div>
+                        <div class="character">Alfred Hitchcock</div>
+                    </div>
+                </a>
+
+                <a href="/" class="scroll-card">
+                    <div class="artwork">
+                        <img src="assets/images/profile_pic.jpg"/>
+                    </div>
+                    <div class="details">
+                        <div class="performer">Alistair Brammer</div>
+                        <div class="character">Richard & Ray</div>
+                    </div>
+                </a>
+
+                <a href="/" class="scroll-card">
+                    <div class="artwork">
+                        <img src="assets/images/profile_pic.jpg"/>
+                    </div>
+                    <div class="details">
+                        <div class="performer">Keanna Bloomfield</div>
+                        <div class="character">Millie</div>
+                    </div>
+                </a>
+
+                <a href="/" class="scroll-card">
+                    <div class="artwork">
+                        <img src="assets/images/profile_pic.jpg"/>
+                    </div>
+                    <div class="details">
+                        <div class="performer">Nicola Hughes</div>
+                        <div class="character">Eve</div>
+                    </div>
+                </a>
+
+                <a href="/" class="scroll-card">
+                    <div class="artwork">
+                        <img src="assets/images/profile_pic.jpg"/>
+                    </div>
+                    <div class="details">
+                        <div class="performer">Liam Tamne</div>
+                        <div class="character">Fred & Carl</div>
+                    </div>
+                </a>
+                
+                <a href="/" class="scroll-card">
+                    <div class="artwork">
+                        <img src="assets/images/profile_pic.jpg"/>
+                    </div>
+                    <div class="details">
+                        <div class="performer">Jade Oswald</div>
+                        <div class="character">Lisa & Nurse Thornhil</div>
+                    </div>
+                </a>
+                
+                <a href="/" class="scroll-card">
+                    <div class="artwork">
+                        <img src="assets/images/profile_pic.jpg"/>
+                    </div>
+                    <div class="details">
+                        <div class="performer">Joaquin Pedro Valdes</div>
+                        <div class="character">Michael & Deitz</div>
+                    </div>
+                </a>
+
+                <a href="/" class="scroll-card">
+                    <div class="artwork">
+                        <img src="assets/images/profile_pic.jpg"/>
+                    </div>
+                    <div class="details">
+                        <div class="performer">Landi Oshinowo</div>
+                        <div class="character">Blanche & Millie's mama</div>
+                    </div>
+                </a>
+
+                <a href="/" class="scroll-card">
+                    <div class="artwork">
+                        <img src="assets/images/profile_pic.jpg"/>
+                    </div>
+                    <div class="details">
+                        <div class="performer">Scarlett Strallen</div>
+                        <div class="character">Mary</div>
+                    </div>
+                </a>
+
+            </div>
+        </div>
+
+        <!-- recomendations -->
+        <div id="peoplealsolike" class="main-section small-shows">
+            <div class="section-title">People Also Like</div>
+
+            <div class="scrolling-cards">
+
+                <a href="/sunshine_on_leith" id="sunshine_on_leith" class="scroll-card">
+                    <div class="artwork">
+                        <img src="assets/images/sunshine_on_leith.jpg"/>
+                        <div class="score"><span>⭐️</span>6.1</div>
+                    </div>
+                    <div class="info-area">
+                        <div class="title">Sunshine On Leith</div>                    
+                    </div>
+                </a>
+
+                <a href="/inotherwords" id="inotherwords" class="scroll-card">
+                    <div class="artwork">
+                        <img src="assets/images/in_other_words.jpg"/>
+                        <div class="score"><span>⭐️</span>6.7</div>
+                    </div>
+                    <div class="info-area">
+                        <div class="title">In Other Words</div>
+                    </div>
+                </a>
+
+                <a href="/aquapella" id="aquapella" class="scroll-card">
+                    <div class="artwork">
+                        <img src="assets/images/aquapella.jpeg"/>
+                        <div class="score"><span>⭐️</span>9.8</div>
+                    </div>
+                    <div class="info-area">
+                        <div class="title">Aquapella: Live At Komedia</div>
+                    </div>
+                </a>
+
+                <a href="/encore.html" id="encore" class="scroll-card">
+                    <div class="artwork">
+                        <img src="assets/images/busms_encore.jpg" />
+                        <div class="score"><span>⭐️</span>10.0</div>
+                    </div>
+                    <div class="info-area">
+                        <div class="title">BUSMS Presents: Encore</div>                    
+                    </div>
+                </a>
+
+                <a href="/carrie" id="carrie" class="scroll-card">
+                    <div class="artwork">
+                        <img src="assets/images/carrie.png"/>
+                        <div class="score"><span>⭐️</span>6.7</div>
+                    </div>
+                    <div class="info-area">
+                        <div class="title">Carrie</div>
+                    </div>
+                </a>
+
+                <a href="/playhouse_creatures" id="playhouse_creatures" class="scroll-card">
+                    <div class="artwork">
+                        <img src="assets/images/playhouse_creatures.jpg"/>
+                        <div class="score"><span>⭐️</span>7.3</div>
+                    </div>
+                    <div class="info-area">
+                        <div class="title">Playhouse Creatures</div>
+                    </div>
+                </a>
+
+                <a href="/musicals_through_the_ages" id="musicals_through_the_ages" class="scroll-card">
+                    <div class="artwork">
+                        <img src="assets/images/musicals_through_the_ages.jpg"/>
+                        <div class="score"><span>⭐️</span>8.2</div>
+                    </div>
+                    <div class="info-area">
+                        <div class="title">Musicals Through The Ages</div>                    
+                    </div>
+                </a>
+
+                <a href="/a_night_at_the_movies" id="a_night_at_the_movies" class="scroll-card">
+                    <div class="artwork">
+                        <img src="assets/images/a_night_at_the_ages.jpg"/>
+                        <div class="score"><span>⭐️</span>8.7</div>
+                    </div>
+                    <div class="info-area">
+                        <div class="title">A Night At The Movies</div>
+                    </div>
+                </a>
+
+                <a href="/aida" id="aida" class="scroll-card">
+                    <div class="artwork">
+                        <img src="assets/images/aida.jpg"/>
+                        <div class="score"><span>⭐️</span>6.7</div>
+                    </div>
+                    <div class="info-area">
+                        <div class="title">Aida</div>
+                    </div>
+                </a>
+
+            </div>
+
+        </div>
+
+        <div id="you-might-like-section" class="main-section small-shows">
+            <div class="section-title">You Might Like...</div>
+
+            <div class="scrolling-cards">
+
+                <a href="/mamma_mia" id="mamma_mia" class="scroll-card">
+                    <div class="artwork">
+                        <img src="assets/images/mamma mia.jpg"/>
+                        <div class="score"><span>⭐️</span>5.1</div>
+                    </div>
+                    <div class="info-area">
+                        <div class="title">Mamma Mia!</div>                    
+                    </div>
+                </a>
+
+                <a href="/aida" id="aida" class="scroll-card">
+                    <div class="artwork">
+                        <img src="assets/images/aida.jpg"/>
+                        <div class="score"><span>⭐️</span>6.7</div>
+                    </div>
+                    <div class="info-area">
+                        <div class="title">Aida</div>
+                    </div>
+                </a>
+
+                <a href="/meangirls" id="meansgirls" class="scroll-card">
+                    <div class="artwork">
+                        <div class="score"><span>⭐️</span>8.7</div>
+                        <img src="assets/images/mean_girls.jpg">
+                    </div>
+                    <div class="info-area">
+                        <div class="title">Mean Girls</div>
+                    </div>
+                </a>
+
+                <a href="/musicals_through_the_ages" id="musicals_through_the_ages" class="scroll-card">
+                    <div class="artwork">
+                        <img src="assets/images/musicals_through_the_ages.jpg"/>
+                        <div class="score"><span>⭐️</span>8.2</div>
+                    </div>
+                    <div class="info-area">
+                        <div class="title">Musicals Through The Ages</div>                    
+                    </div>
+                </a>
+
+                <a href="/a_night_at_the_movies" id="a_night_at_the_movies" class="scroll-card">
+                    <div class="artwork">
+                        <img src="assets/images/a_night_at_the_ages.jpg"/>
+                        <div class="score"><span>⭐️</span>8.7</div>
+                    </div>
+                    <div class="info-area">
+                        <div class="title">A Night At The Movies</div>
+                    </div>
+                </a>
+
+                <a href="/jamie" id="jamie" class="scroll-card">
+                    <div class="artwork">
+                        <img src="assets/images/jamie.jpeg"/>
+                        <div class="score"><span>⭐️</span>6.7</div>
+                    </div>
+                    <div class="info-area">
+                        <div class="title">Everybody's Talking About Jamie</div>
+                    </div>
+                </a>
+
+                <a href="/inotherwords" id="inotherwords" class="scroll-card">
+                    <div class="artwork">
+                        <img src="assets/images/in_other_words.jpg"/>
+                        <div class="score"><span>⭐️</span>6.7</div>
+                    </div>
+                    <div class="info-area">
+                        <div class="title">In Other Words</div>
+                    </div>
+                </a>
+
+                <a href="/aquapella" id="aquapella" class="scroll-card">
+                    <div class="artwork">
+                        <img src="assets/images/aquapella.jpeg"/>
+                        <div class="score"><span>⭐️</span>9.8</div>
+                    </div>
+                    <div class="info-area">
+                        <div class="title">Aquapella: Live At Komedia</div>
+                    </div>
+                </a>
+
+                <a href="/six" id="six" class="scroll-card">
+                    <div class="artwork">
+                        <img src="assets/images/six.jpeg"/>
+                        <div class="score"><span>⭐️</span>8.7</div>
+                    </div>
+                    <div class="info-area">
+                        <div class="title">Six</div>
+                    </div>
+                </a>
+
+            </div>
+
+        </div>
+
+        <p id="copyright">COPYRIGHT 2025</p>
+
+    </div>
+
+    <!-- right area -->
+    <div id="sidebar">
+
+        <!-- friend ratings -->
+        <div id="friend-ratings">
+            <a href="/ratings" class="title">Recent Friend Ratings</a>
+            <div id="rating-cards">
+
+
+                <a href="/encore.html" class="sidebar-card">
+                    <div class="artwork">
+                        <img src="assets/images/busms_encore.jpg"/>
+                    </div>
+                    <div class="details">
+                        <div class="rating">
+                            <div class="person">Encore</div>
+                            <div class="score"><span>⭐️</span>7.5</div>
+                        </div>
+                        <div class="description"><b>BUSMS Presents: Encore</b> The choreography was seriously next-level. To be honest, I only went to this show because my flatmate was in it though - nice quality, reasonable price. Pretty good</div>
+                    </div>
+                </a>
+
+                <a href="/ratings/matt" class="sidebar-card">
+                    <div class="artwork">
+                        <img src="assets/images/aquapella.jpeg"/>
+                    </div>
+                    <div class="details">
+                        <div class="rating">
+                            <div class="person">Matt</div>
+                            <div class="score"><span>⭐️</span>10.0</div>
+                        </div>
+                        <div class="description"><b>Aquapella: Live At Komedia</b> What a show this was! Incredible live performances, being able to do things with their mouths that I never dreamed were possible! Could not recommend this more, you have to go and see them before it's too late!</div>
+                    </div>
+                </a>
+
+                <a href="/ratings/john" class="sidebar-card">
+                    <div class="artwork">
+                        <img src="assets/images/the_lion_king.jpg"/>
+                    </div>
+                    <div class="details">
+                        <div class="rating">
+                            <div class="person">John</div>
+                            <div class="score"><span>⭐️</span>9.2</div>
+                        </div>
+                        <div class="description"><b>The Lion King:</b> Wow. Just wow. I have no idea how they managed to get these lions to acts so well. Props to the meerkat also.</div>
+                    </div>
+                </a>
+
+                <a href="/ratings/matt" class="sidebar-card">
+                    <div class="artwork">
+                        <img src="assets/images/carrie.png"/>
+                    </div>
+                    <div class="details">
+                        <div class="rating">
+                            <div class="person">Matt</div>
+                            <div class="score"><span>⭐️</span>4.0</div>
+                        </div>
+                        <div class="description"><b>Carrie:</b> This was so spooky! Why on earth is this Carrie so horrible to all the other people. Thought this would be a more fun love story musical whoops. Maybe could have got that from the poster.</div>
+                    </div>
+                </a>
+
+            </div>
+        </div>
+
+        <!-- news -->
+        <div id="news">
+            <a href="/news" class="title">New & Upcoming</a>
+            <div id="news-cards">
+
+                <a href="/news/newshow" class="sidebar-card">
+                    <div class="artwork">
+                        <img src="assets/images/hitchcock_presents.png"/>
+                    </div>
+                    <div class="details">
+                        <div class="title">New Show!</div>
+                        <div class="description">A stellar cast tell extraordinary interwoven tales of betrayal, blackmail and homicide from the Master of Suspense, Alfred Hitchcock, the creative genius behind iconic movies Psycho, Vertigo, North by Northwest, Rear Window, The Birds and many more.</div>
+                    </div>
+                </a>
+                
+            </div>
+        </div>
+
+    </div>
+</div>
+
+</body>
+
+</html>
